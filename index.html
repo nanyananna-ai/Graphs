@@ -1,0 +1,44 @@
+https://<your-username>.github.io/<your-repo>/
+If you don’t see that line, refresh the page once or twice after a minute.
+
+4) Build your chart URLs
+Each HTML file in your repo becomes a web page:
+
+php-template
+Copy code
+https://<your-username>.github.io/<your-repo>/<filename>.html
+Examples (replace with your real names, and match case exactly):
+
+https://yourname.github.io/consumer-meca/Sankey_Tabs_Interactive.html
+
+https://yourname.github.io/consumer-meca/Eggs_Female_Schwartz_Interactive.html
+
+If your files are in a subfolder (e.g. charts/), include it:
+
+perl
+Copy code
+https://<user>.github.io/<repo>/charts/Eggs_Male_Sankey_Interactive.html
+5) (Optional) Make a simple index page so you can “see something”
+If you open the repo URL and it’s blank, create a file named index.html in the repo root with quick links:
+
+html
+Copy code
+<!doctype html>
+<html>
+  <head><meta charset="utf-8"><title>Interactive Charts</title></head>
+  <body>
+    <h1>Interactive Charts</h1>
+    <ul>
+      <li><a href="Sankey_Tabs_Interactive.html">Tabbed Sankey (switch segments)</a></li>
+      <li><a href="Overall_Schwartz_Interactive.html">Overall Schwartz bars</a></li>
+      <li><a href="Eggs_Female_Schwartz_Interactive.html">Eggs Female – Schwartz bars</a></li>
+      <li><a href="Eggs_Male_Schwartz_Interactive.html">Eggs Male – Schwartz bars</a></li>
+      <li><a href="Burgers_Female_Schwartz_Interactive.html">Burgers Female – Schwartz bars</a></li>
+      <li><a href="Burgers_Male_Schwartz_Interactive.html">Burgers Male – Schwartz bars</a></li>
+      <li><a href="Eggs_Female_Sankey_Interactive.html">Eggs Female – Sankey</a></li>
+      <li><a href="Eggs_Male_Sankey_Interactive.html">Eggs Male – Sankey</a></li>
+      <li><a href="Burgers_Female_Sankey_Interactive.html">Burgers Female – Sankey</a></li>
+      <li><a href="Burgers_Male_Sankey_Interactive.html">Burgers Male – Sankey</a></li>
+    </ul>
+  </body>
+</html>
